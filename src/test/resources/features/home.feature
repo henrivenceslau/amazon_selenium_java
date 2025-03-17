@@ -13,4 +13,4 @@ Esquema do Cenário: Validar sugestoes de pesquisa na home da Amazon
 		Exemplos:
 		| produto | sugestoes										     |
 		| celular | celular samsung ; celular barato |
-		| maquina | lavar   										     |
+		| maquina | fotografica   					  	     |

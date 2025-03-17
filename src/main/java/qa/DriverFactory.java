@@ -16,7 +16,7 @@ public class DriverFactory {
 
 	public WebDriver init_driver(String browser) {
 
-		System.out.println("browser value is: " + browser);
+		System.out.println("Browser: " + browser);
 
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -27,7 +27,7 @@ public class DriverFactory {
 		} else if (browser.equals("safari")) {
 			tlDriver.set(new SafariDriver());
 		} else {
-			System.out.println("Please pass the correct browser value: " + browser);
+			System.out.println("Informe o browser correto no arquivo. Valor informado: " + browser);
 		}
 
 		getDriver().manage().deleteAllCookies();
