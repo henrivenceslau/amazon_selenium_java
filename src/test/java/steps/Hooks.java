@@ -22,14 +22,12 @@ public class Hooks {
 
 	@Before(order = 0)
 	public void getProperty() {
-		System.out.println("afsfsaa");
 		configReader = new ConfigReader();
 		prop = configReader.init_prop();
 	}
 
 	@Before(order = 1)
 	public void launchBrowser() {
-		System.out.println("aaa");
 		String browserName = prop.getProperty("browser");
 		driverFactory = new DriverFactory();
 		driver = driverFactory.init_driver(browserName);
